@@ -1,0 +1,17 @@
+.container {
+    position: fixed;
+    bottom: 15px;
+    left: 25%;
+    width: 50%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 9999;
+
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
