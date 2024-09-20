@@ -1,17 +1,56 @@
 .container {
     position: fixed;
     bottom: 15px;
-    left: 25%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 50%;
-    background-color: #333;
+    max-width: 500px;
+    border-radius: 5px;
+    background-color: white;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
     z-index: 9999;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
 
-    .center {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
+.formbuttonmenu {
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    transition:
+        transform 0.3s ease,
+        margin 0.3s ease;
+    background-color: rgb(203, 203, 203);
+    padding: 5px 6px;
+    margin: 0 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.formbuttonmenu:hover {
+    transform: scale(1.5);
+    margin: 0 10px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 724px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 524px) {
+    .container {
+        width: 90%;
     }
 }

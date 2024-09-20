@@ -1,8 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
-import { contactUrl, homeUrl, layoutUrl } from "./urls";
+import { aboutUrl, contactUrl, layoutUrl, projectUrl } from "./urls";
 import { Layout } from "../pages/app/Layout";
-import { Contact, Home } from "../pages";
-import { AnimatePresence } from "framer-motion";
+import { About, Contact, Home, Project } from "../pages";
 
 export const routerConfig = createBrowserRouter([
     {
@@ -10,12 +9,20 @@ export const routerConfig = createBrowserRouter([
         element: <Layout />,
         children: [
             {
-                path: homeUrl,
+                path: layoutUrl,
                 element: <Home />,
             },
             {
                 path: contactUrl,
                 element: <Contact />,
+            },
+            {
+                path: projectUrl,
+                element: <Project />,
+            },
+            {
+                path: aboutUrl,
+                element: <About />,
             },
         ],
     },
