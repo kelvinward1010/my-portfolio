@@ -38,7 +38,7 @@ const MENUS = [
     {
         key: 5,
         icon: <IconBrandInstagram />,
-        url: "https://www.facebook.com/duy.kelvinward",
+        url: "https://www.instagram.com/kelvinward101/",
     },
     {
         key: 6,
