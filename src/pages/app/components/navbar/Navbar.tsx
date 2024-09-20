@@ -48,7 +48,7 @@ const MENUS = [
     {
         key: 7,
         icon: <IconBrandLinkedin />,
-        url: "www.linkedin.com/in/dao-van-duy-29a10928b",
+        url: "https://www.linkedin.com/in/dao-van-duy-29a10928b/",
     },
     {
         key: 8,
