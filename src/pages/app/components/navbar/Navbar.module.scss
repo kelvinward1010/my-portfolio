@@ -14,8 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow-x: auto;
-    overflow-y: hidden;
+    overflow: auto hidden;
 }
 
 .formbuttonmenu {
@@ -45,13 +44,13 @@
 
 @media (max-width: 724px) {
     .container {
-        width: 75%;
+        width: 80%;
     }
 }
 
 @media (max-width: 524px) {
     .container {
-        width: 80%;
-        padding: 10px 10px 10px 40px;
+        width: 85%;
+        padding: 10px 10px 10px 50px;
     }
 }
