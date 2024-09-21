@@ -35,3 +35,9 @@
     visibility: visible;
     opacity: 1;
 }
+
+@media (max-width: 524px) {
+    .tooltip {
+        display: none;
+    }
+}
