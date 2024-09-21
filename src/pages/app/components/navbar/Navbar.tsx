@@ -11,7 +11,7 @@ import {
     IconHome,
     IconUserCircle,
 } from "@tabler/icons-react";
-import Tooltip from "@/components/tooltip/ToolTip";
+import Tooltip from "@/components/tooltip/Tooltip";
 
 const MENUS = [
     {
