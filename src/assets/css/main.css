@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "DancingScriptFont";
+    src: url("../fonts/DancingScript-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "PlaypenSans";
+    src: url("../fonts/PlaypenSans-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "PlaywriteCU";
+    src: url("../fonts/PlaywriteCU-VariableFont_wght.ttf") format("truetype");
+}

@@ -11,50 +11,59 @@ import {
     IconHome,
     IconUserCircle,
 } from "@tabler/icons-react";
+import Tooltip from "@/components/tooltip/ToolTip";
 
 const MENUS = [
     {
         key: 1,
         icon: <IconHome />,
         url: layoutUrl,
+        text: "Home",
     },
     {
         key: 2,
         icon: <IconUserCircle />,
         url: aboutUrl,
         label: "About",
+        text: "About",
     },
     {
         key: 3,
         icon: <IconBrandDeviantart />,
         url: projectUrl,
         label: "Project",
+        text: "Project",
     },
     {
         key: 4,
         icon: <IconBrandFacebook />,
         url: "https://www.facebook.com/duy.kelvinward",
+        text: "Facebook",
     },
     {
         key: 5,
         icon: <IconBrandInstagram />,
         url: "https://www.instagram.com/kelvinward101/",
+        text: "Instagram",
     },
     {
         key: 6,
         icon: <IconBrandGithub />,
         url: "https://github.com/kelvinward1010",
+        text: "Github",
     },
     {
         key: 7,
         icon: <IconBrandLinkedin />,
         url: "https://www.linkedin.com/in/dao-van-duy-29a10928b/",
+        text: "Linkedin",
     },
     {
         key: 8,
         icon: <IconContract />,
         url: contactUrl,
         label: "Contact",
+        text: "Contact",
     },
 ];
 
@@ -68,6 +77,7 @@ export function Navbar() {
                         key={menu.key}
                         url={menu.url}
                         icon={menu.icon}
+                        text={menu.text}
                     />
                 );
             })}
@@ -79,9 +89,10 @@ interface FormButtonMenuProps {
     label?: string;
     icon?: any;
     url: string;
+    text?: string;
 }
 
-function FormButtonMenu({ label, icon, url }: FormButtonMenuProps) {
+function FormButtonMenu({ label, icon, url, text }: FormButtonMenuProps) {
     const navigate = useNavigate();
     const isExternalLink =
         url.startsWith("http://") || url.startsWith("https://");
@@ -99,8 +110,13 @@ function FormButtonMenu({ label, icon, url }: FormButtonMenuProps) {
     };
 
     return (
-        <button onClick={handleButtonClick} className={styles.formbuttonmenu}>
-            {icon}
-        </button>
+        <Tooltip text={text}>
+            <button
+                onClick={handleButtonClick}
+                className={styles.formbuttonmenu}
+            >
+                {icon}
+            </button>
+        </Tooltip>
     );
 }

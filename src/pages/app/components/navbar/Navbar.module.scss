@@ -9,12 +9,12 @@
     background-color: white;
     color: #fff;
     text-align: center;
-    z-index: 9999;
+    z-index: 999;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: auto hidden;
+    overflow: visible;
 }
 
 .formbuttonmenu {
@@ -52,5 +52,6 @@
     .container {
         width: 85%;
         padding: 10px 10px 10px 50px;
+        // overflow: auto hidden;
     }
 }
