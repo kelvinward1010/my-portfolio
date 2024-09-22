@@ -21,3 +21,12 @@
 ::-webkit-scrollbar-thumb:hover {
     background: gray;
 }
+
+/*Theme*/
+.dark-theme {
+    background-color: black !important;
+}
+
+.light-theme {
+    background-color: white !important;
+}

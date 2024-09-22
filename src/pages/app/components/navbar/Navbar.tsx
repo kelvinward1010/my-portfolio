@@ -16,8 +16,10 @@ import {
     IconBrandLinkedin,
     IconContract,
     IconHome,
+    IconMoonFilled,
     IconPhoto,
     IconPlaneTilt,
+    IconSun,
     IconUserCircle,
 } from "@tabler/icons-react";
 import Tooltip from "@/components/tooltip/Tooltip";
@@ -90,7 +92,12 @@ const MENUS = [
     },
 ];
 
-export function Navbar() {
+interface NavbarProps {
+    isDarkMode?: boolean;
+    toggleTheme?: () => void;
+}
+
+export function Navbar({ isDarkMode, toggleTheme }: NavbarProps) {
     return (
         <div className={styles.container}>
             {MENUS.map((menu) => {
@@ -104,6 +111,9 @@ export function Navbar() {
                     />
                 );
             })}
+            <button className={styles.formbuttonmenu} onClick={toggleTheme}>
+                {isDarkMode ? <IconMoonFilled /> : <IconSun />}
+            </button>
         </div>
     );
 }

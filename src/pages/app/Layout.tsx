@@ -2,6 +2,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import styles from "./Layout.module.scss";
 import { AnimatePresence, motion } from "framer-motion";
 import { Navbar } from "./components/navbar/Navbar";
+import useThemeMode from "@/hooks/useThemeMode";
 
 interface Props {
     children?: React.ReactNode;
@@ -9,11 +10,14 @@ interface Props {
 
 export function Layout({ children }: Props) {
     const location = useLocation();
+    const { isDarkMode, toggleTheme } = useThemeMode();
 
     return (
-        <div className={styles.container}>
+        <div
+            className={`${styles.container} ${isDarkMode ? "dark-theme" : "light-theme"}`}
+        >
             <div className={styles.center}>
-                <Navbar />
+                <Navbar toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
                 <AnimatePresence mode={"wait"}>
                     <motion.div
                         // initial={{ y: '100%', opacity: 0 }}
