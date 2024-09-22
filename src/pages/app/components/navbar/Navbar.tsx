@@ -1,6 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import styles from "./Navbar.module.scss";
-import { aboutUrl, contactUrl, layoutUrl, projectUrl } from "@/routes/urls";
+import {
+    aboutUrl,
+    contactUrl,
+    imagesUrl,
+    layoutUrl,
+    projectUrl,
+    travelUrl,
+} from "@/routes/urls";
 import {
     IconBrandDeviantart,
     IconBrandFacebook,
@@ -9,6 +16,8 @@ import {
     IconBrandLinkedin,
     IconContract,
     IconHome,
+    IconPhoto,
+    IconPlaneTilt,
     IconUserCircle,
 } from "@tabler/icons-react";
 import Tooltip from "@/components/tooltip/Tooltip";
@@ -36,30 +45,44 @@ const MENUS = [
     },
     {
         key: 4,
+        icon: <IconPhoto />,
+        url: imagesUrl,
+        label: "Images",
+        text: "Images",
+    },
+    {
+        key: 5,
+        icon: <IconPlaneTilt />,
+        url: travelUrl,
+        label: "Travel",
+        text: "Travel",
+    },
+    {
+        key: 6,
         icon: <IconBrandFacebook />,
         url: "https://www.facebook.com/duy.kelvinward",
         text: "Facebook",
     },
     {
-        key: 5,
+        key: 7,
         icon: <IconBrandInstagram />,
         url: "https://www.instagram.com/kelvinward101/",
         text: "Instagram",
     },
     {
-        key: 6,
+        key: 8,
         icon: <IconBrandGithub />,
         url: "https://github.com/kelvinward1010",
         text: "Github",
     },
     {
-        key: 7,
+        key: 9,
         icon: <IconBrandLinkedin />,
         url: "https://www.linkedin.com/in/dao-van-duy-29a10928b/",
         text: "Linkedin",
     },
     {
-        key: 8,
+        key: 10,
         icon: <IconContract />,
         url: contactUrl,
         label: "Contact",

@@ -4,10 +4,7 @@ import styles from "./About.module.scss";
 export function About() {
     return (
         <div className={styles.container}>
-            <TitlePage
-                title="About"
-                description="Youtuber / Sofware Engineer"
-            />
+            <TitlePage title="About" description="Introduce myself in detail" />
         </div>
     );
 }

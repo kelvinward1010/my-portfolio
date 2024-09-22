@@ -19,3 +19,13 @@ export const Project = lazyLoad(
     () => import("./project/views/Project"),
     (module) => module.Project,
 );
+
+export const ImagesPage = lazyLoad(
+    () => import("./images/views/ImagesPage"),
+    (module) => module.ImagesPage,
+);
+
+export const Travel = lazyLoad(
+    () => import("./travel/views/Travel"),
+    (module) => module.Travel,
+);

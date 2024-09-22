@@ -4,3 +4,5 @@ export const homeUrl = "/";
 export const aboutUrl = "/about";
 export const projectUrl = "/project";
 export const contactUrl = "/contact";
+export const imagesUrl = "/images";
+export const travelUrl = "/travel";

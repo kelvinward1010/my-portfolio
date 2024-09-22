@@ -10,6 +10,7 @@ function TitlePage({ title, description }: TitlePageProps) {
         <div className={styles.container}>
             <h1 className={styles.titlemain}>{title}</h1>
             <p className={styles.descriptionmain}>{description}</p>
+            <div className={styles.line} />
         </div>
     );
 }

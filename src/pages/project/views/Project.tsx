@@ -6,7 +6,7 @@ export function Project() {
         <div className={styles.container}>
             <TitlePage
                 title="Project"
-                description="Youtuber / Sofware Engineer"
+                description="Projects that I research and complete independently"
             />
         </div>
     );
