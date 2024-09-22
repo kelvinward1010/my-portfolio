@@ -9,7 +9,7 @@
     background-color: white;
     color: #fff;
     text-align: center;
-    z-index: 999;
+    z-index: 9999;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -25,8 +25,8 @@
     }
 
     @media (max-width: 524px) {
-        width: 85%;
-        padding: 10px 10px 10px 50px;
+        width: 90vw;
+        padding: 10px 10px 5px 65px;
         overflow: auto hidden;
     }
 }
@@ -43,9 +43,9 @@
     margin: 0 5px;
     position: relative;
     z-index: 1;
-}
 
-.formbuttonmenu:hover {
-    transform: scale(1.5);
-    margin: 0 10px;
+    &:hover {
+        transform: scale(1.5);
+        margin: 0 10px;
+    }
 }
