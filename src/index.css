@@ -25,8 +25,10 @@
 /*Theme*/
 .dark-theme {
     background-color: black !important;
+    color: white;
 }
 
 .light-theme {
     background-color: white !important;
+    color: black;
 }

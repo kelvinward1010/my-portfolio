@@ -15,6 +15,20 @@
     align-items: center;
     justify-content: center;
     overflow: visible;
+
+    @media (max-width: 1200px) {
+        width: 70%;
+    }
+
+    @media (max-width: 724px) {
+        width: 80%;
+    }
+
+    @media (max-width: 524px) {
+        width: 85%;
+        padding: 10px 10px 10px 50px;
+        overflow: auto hidden;
+    }
 }
 
 .formbuttonmenu {
@@ -34,24 +48,4 @@
 .formbuttonmenu:hover {
     transform: scale(1.5);
     margin: 0 10px;
-}
-
-@media (max-width: 1200px) {
-    .container {
-        width: 70%;
-    }
-}
-
-@media (max-width: 724px) {
-    .container {
-        width: 80%;
-    }
-}
-
-@media (max-width: 524px) {
-    .container {
-        width: 85%;
-        padding: 10px 10px 10px 50px;
-        overflow: auto hidden;
-    }
 }

@@ -16,15 +16,14 @@ export function Layout({ children }: Props) {
         <div
             className={`${styles.container} ${isDarkMode ? "dark-theme" : "light-theme"}`}
         >
-            <div className={styles.center}>
+            <div className={`${styles.center}`}>
                 <Navbar toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
                 <AnimatePresence mode={"wait"}>
                     <motion.div
-                        // initial={{ y: '100%', opacity: 0 }}
-                        // animate={{ y: 0, opacity: 1 }}
-                        // exit={{ y: '-100%', opacity: 0 }}
-                        initial={{ scale: 0.9, rotate: 180, opacity: 0 }}
-                        animate={{ scale: 1, rotate: 0, opacity: 1 }}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        // initial={{ scale: 0.9, rotate: 180, opacity: 0 }}
+                        // animate={{ scale: 1, rotate: 0, opacity: 1 }}
                         transition={{
                             duration: 1,
                             ease: "easeInOut",
