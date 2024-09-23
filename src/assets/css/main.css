@@ -12,3 +12,8 @@
     font-family: "PlaywriteCU";
     src: url("../fonts/PlaywriteCU-VariableFont_wght.ttf") format("truetype");
 }
+
+.text-normal {
+    font-family: "PlaypenSans";
+    font-size: 13px;
+}
