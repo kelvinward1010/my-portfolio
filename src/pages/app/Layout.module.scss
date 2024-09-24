@@ -1,7 +1,7 @@
 .container {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow: hidden auto;
     transition:
         background-color 0.5s ease,
         color 0.5s ease;
