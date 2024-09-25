@@ -1,0 +1,13 @@
+.img {
+    width: 33%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:
+        transform 0.5s ease,
+        opacity 0.5s ease;
+
+    &:hover {
+        transform: scale(1.2);
+        opacity: 1.5;
+    }
+}
