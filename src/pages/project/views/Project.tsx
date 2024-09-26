@@ -1,6 +1,6 @@
 import TitlePage from "@/components/titlepage/TitlePage";
 import styles from "./Project.module.scss";
-import ProjectCpt from "@/components/projectCpt/ProjectCpt";
+import ProjectCpt from "../components/projectCpt/ProjectCpt";
 
 export function Project() {
     return (

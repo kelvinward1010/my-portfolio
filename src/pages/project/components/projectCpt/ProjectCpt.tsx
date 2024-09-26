@@ -8,9 +8,13 @@ function ProjectCpt() {
             <div className={styles.technical}>
                 <h5 className={"text-normal"}>Technical </h5>
                 <div className={styles.containtechnical}>
-                    <p className={"text-normal"}>Languages:</p>
-                    <p className={"text-normal"}>Libraries:</p>
-                    <p className={"text-normal"}>Framework:</p>
+                    <p className={"text-normal"}>
+                        Languages: Javascript/Typescript
+                    </p>
+                    <p className={"text-normal"}>
+                        Libraries: ReactJS, Antd, zustand, redux
+                    </p>
+                    <p className={"text-normal"}>Framework: Vite</p>
                 </div>
             </div>
         </div>

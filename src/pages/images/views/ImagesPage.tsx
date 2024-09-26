@@ -1,6 +1,6 @@
 import TitlePage from "@/components/titlepage/TitlePage";
 import styles from "./ImagesPage.module.scss";
-import ImageCpt from "@/components/imageCpt/ImageCpt";
+import ImageCpt from "../components/imageCpt/ImageCpt";
 
 export function ImagesPage() {
     return (
