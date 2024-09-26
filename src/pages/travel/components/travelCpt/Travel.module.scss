@@ -5,12 +5,17 @@
     margin-bottom: 30px;
     border-bottom: 1px dashed teal;
 
-    .title {
-        font-size: 15px;
-        cursor: pointer;
+    .toptitle {
+        display: flex;
+        justify-content: space-between;
 
-        &:hover {
-            text-decoration: underline;
+        .title {
+            font-size: 15px;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 
@@ -20,5 +25,6 @@
         height: auto;
         border-radius: 10px;
         object-fit: cover;
+        cursor: pointer;
     }
 }

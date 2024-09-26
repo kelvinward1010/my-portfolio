@@ -2,13 +2,24 @@ import { createBrowserRouter } from "react-router-dom";
 import {
     aboutUrl,
     contactUrl,
+    imagesIDUrl,
     imagesUrl,
     layoutUrl,
     projectUrl,
+    travelIDUrl,
     travelUrl,
 } from "./urls";
 import { Layout } from "../pages/app/Layout";
-import { About, Contact, Home, ImagesPage, Project, Travel } from "../pages";
+import {
+    About,
+    Contact,
+    Home,
+    ImagesPage,
+    ImagesPageID,
+    Project,
+    Travel,
+    TravelID,
+} from "../pages";
 
 export const routerConfig = createBrowserRouter([
     {
@@ -36,8 +47,16 @@ export const routerConfig = createBrowserRouter([
                 element: <ImagesPage />,
             },
             {
+                path: imagesIDUrl,
+                element: <ImagesPageID />,
+            },
+            {
                 path: travelUrl,
                 element: <Travel />,
+            },
+            {
+                path: travelIDUrl,
+                element: <TravelID />,
             },
         ],
     },

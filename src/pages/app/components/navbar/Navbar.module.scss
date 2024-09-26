@@ -4,7 +4,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 50%;
-    max-width: 500px;
+    max-width: 560px;
     border-radius: 5px;
     background-color: white;
     color: #fff;
@@ -20,6 +20,7 @@
 
     @media (max-width: 724px) {
         width: 80%;
+        overflow: auto hidden;
     }
 
     @media (max-width: 524px) {

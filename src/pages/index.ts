@@ -25,7 +25,17 @@ export const ImagesPage = lazyLoad(
     (module) => module.ImagesPage,
 );
 
+export const ImagesPageID = lazyLoad(
+    () => import("./images/views/ImagesPageID"),
+    (module) => module.ImagesPageID,
+);
+
 export const Travel = lazyLoad(
     () => import("./travel/views/Travel"),
     (module) => module.Travel,
+);
+
+export const TravelID = lazyLoad(
+    () => import("./travel/views/TravelID"),
+    (module) => module.TravelID,
 );
