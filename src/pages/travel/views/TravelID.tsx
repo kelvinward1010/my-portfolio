@@ -1,9 +1,13 @@
+import TitlePage from "@/components/titlepage/TitlePage";
 import styles from "./TravelID.module.scss";
 
 export function TravelID() {
     return (
         <div className={styles.container}>
-            <h1 className="text-normal">This is a page detail for travel</h1>
+            <TitlePage
+                title="Vinh Ha Long - Quang Ninh"
+                description="This is a page detail for travel"
+            />
         </div>
     );
 }
