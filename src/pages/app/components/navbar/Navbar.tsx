@@ -14,7 +14,6 @@ import {
     IconBrandGithub,
     IconBrandInstagram,
     IconBrandLinkedin,
-    IconBrandYoutube,
     IconContract,
     IconHome,
     IconMoonFilled,
@@ -80,18 +79,12 @@ const MENUS = [
     },
     {
         key: 9,
-        icon: <IconBrandYoutube />,
-        url: "https://www.youtube.com/@wardkelvin",
-        text: "YouTube",
-    },
-    {
-        key: 10,
         icon: <IconBrandLinkedin />,
         url: "https://www.linkedin.com/in/dao-van-duy-29a10928b/",
         text: "LinkedIn",
     },
     {
-        key: 11,
+        key: 10,
         icon: <IconContract />,
         url: contactUrl,
         label: "Contact",

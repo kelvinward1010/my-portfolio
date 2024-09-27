@@ -32,3 +32,19 @@
     background-color: white !important;
     color: black;
 }
+
+/*boxlanguages*/
+.boxlanguages-yellow {
+    color: rgb(247, 175, 34) !important;
+    border: 1px solid rgb(247, 175, 34) !important;
+}
+
+.boxlanguages-blue {
+    color: #3178c6 !important;
+    border: 1px solid #3178c6 !important;
+}
+
+.boxlanguages-teal {
+    color: teal !important;
+    border: 1px solid teal !important;
+}

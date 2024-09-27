@@ -1,21 +1,19 @@
+import useThemeMode from "@/hooks/useThemeMode";
 import styles from "./ProjectCpt.module.scss";
+import BoxLanguages from "../BoxLanguages";
 
 function ProjectCpt() {
+    const { isDarkMode } = useThemeMode();
     return (
-        <div className={styles.container}>
+        <div
+            className={`${styles.container} ${isDarkMode ? styles.themeDark : styles.themeLight}`}
+        >
             <h1 className={`${styles.title} text-normal`}>Project Title</h1>
             <p className="text-normal">This is a description project</p>
-            <div className={styles.technical}>
-                <h5 className={"text-normal"}>Technical </h5>
-                <div className={styles.containtechnical}>
-                    <p className={"text-normal"}>
-                        Languages: Javascript/Typescript
-                    </p>
-                    <p className={"text-normal"}>
-                        Libraries: ReactJS, Antd, zustand, redux
-                    </p>
-                    <p className={"text-normal"}>Framework: Vite</p>
-                </div>
+            <div className={styles.languages}>
+                <BoxLanguages title="JavaScript" />
+                <BoxLanguages title="TypeScript" />
+                <BoxLanguages title="Python" />
             </div>
         </div>
     );

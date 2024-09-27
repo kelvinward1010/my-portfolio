@@ -16,6 +16,15 @@ export function ImagesPage() {
                 <ImageCpt />
                 <ImageCpt />
                 <ImageCpt />
+                <ImageCpt />
+                <ImageCpt />
+                <ImageCpt />
+                <ImageCpt />
+                <ImageCpt />
+                <ImageCpt />
+                <ImageCpt />
+                <ImageCpt />
+                <ImageCpt />
             </div>
         </div>
     );
