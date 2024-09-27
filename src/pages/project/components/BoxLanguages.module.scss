@@ -6,4 +6,14 @@
     align-items: center;
     gap: 5px;
     padding: 0 5px;
+
+    p {
+        @media (max-width: 724px) {
+            font-size: 10px;
+        }
+
+        @media (max-width: 524px) {
+            font-size: 10px;
+        }
+    }
 }
