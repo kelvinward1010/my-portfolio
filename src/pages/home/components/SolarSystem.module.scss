@@ -6,13 +6,19 @@
     margin: 170px auto;
 
     @media (max-width: 524px) {
-        width: 30em;
-        height: 30em;
+        width: 25em;
+        height: 25em;
+        margin: 170px auto 250px;
     }
 }
 img {
     height: 130%;
     width: 130%;
+
+    @media (max-width: 524px) {
+        width: 100%;
+        height: 100%;
+    }
 }
 .sun {
     display: flex;
@@ -26,6 +32,13 @@ img {
     border-radius: 50%;
     box-shadow: 0 0 3em rgb(255, 128, 0);
     animation: orbit 50s linear infinite;
+
+    @media (max-width: 524px) {
+        top: 15em;
+        left: 9em;
+        width: 10em;
+        height: 10em;
+    }
 }
 .mercury,
 .venus,
@@ -54,6 +67,13 @@ img {
     width: 15em;
     height: 15em;
     animation: orbit 68.7s linear infinite;
+
+    @media (max-width: 524px) {
+        top: 12.5em;
+        left: 6.5em;
+        width: 15em;
+        height: 15em;
+    }
 }
 
 .venus {
@@ -62,6 +82,13 @@ img {
     width: 20em;
     height: 20em;
     animation: orbit 48.7s linear infinite;
+
+    @media (max-width: 524px) {
+        top: 10em;
+        left: 4em;
+        width: 20em;
+        height: 20em;
+    }
 }
 
 .earth {
@@ -70,6 +97,13 @@ img {
     width: 28em;
     height: 28em;
     animation: orbit 36.5s linear infinite;
+
+    @media (max-width: 524px) {
+        top: 6em;
+        left: 0em;
+        width: 28em;
+        height: 28em;
+    }
 }
 .moon {
     top: 2em;
@@ -84,6 +118,13 @@ img {
     width: 36em;
     height: 36em;
     animation: orbit 26.5s linear infinite;
+
+    @media (max-width: 524px) {
+        top: 2em;
+        left: -3.5em;
+        width: 36em;
+        height: 36em;
+    }
 }
 .jupiter {
     top: -2em;
@@ -91,6 +132,13 @@ img {
     width: 45em;
     height: 45em;
     animation: orbit 21s linear infinite;
+
+    @media (max-width: 524px) {
+        top: -2em;
+        left: -8em;
+        width: 45em;
+        height: 45em;
+    }
 }
 .saturn {
     top: -7em;
@@ -98,6 +146,13 @@ img {
     width: 55em;
     height: 55em;
     animation: orbit 17s linear infinite;
+
+    @media (max-width: 524px) {
+        top: -7em;
+        left: -13em;
+        width: 55em;
+        height: 55em;
+    }
 }
 .uranus {
     top: -12em;
@@ -105,6 +160,13 @@ img {
     width: 65em;
     height: 65em;
     animation: orbit 19s linear infinite;
+
+    @media (max-width: 524px) {
+        top: -12em;
+        left: -18em;
+        width: 65em;
+        height: 65em;
+    }
 }
 .neptune {
     top: -17em;
@@ -112,6 +174,13 @@ img {
     width: 75em;
     height: 75em;
     animation: orbit 15s linear infinite;
+
+    @media (max-width: 524px) {
+        top: -17em;
+        left: -23em;
+        width: 75em;
+        height: 75em;
+    }
 }
 .pluto {
     top: -22em;
@@ -119,6 +188,13 @@ img {
     width: 85em;
     height: 85em;
     animation: orbit 18s linear infinite;
+
+    @media (max-width: 524px) {
+        top: -22em;
+        left: -28em;
+        width: 85em;
+        height: 85em;
+    }
 }
 
 .mercury::before,
