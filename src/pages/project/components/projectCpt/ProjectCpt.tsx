@@ -8,8 +8,14 @@ function ProjectCpt() {
         <div
             className={`${styles.container} ${isDarkMode ? styles.themeDark : styles.themeLight}`}
         >
-            <h1 className={`${styles.title} text-normal`}>Project Title</h1>
-            <p className="text-normal">This is a description project</p>
+            <div className={styles.titlebox}>
+                <h1 className={`${styles.title} text-normal`}>Project Title</h1>
+                <span className="text-normal">stars: 5</span>
+            </div>
+            <p className={`${styles.des} text-normal`}>
+                This is a description project
+            </p>
+            <p className="text-normal">Update at 7:00 - 10/10/2024</p>
             <div className={styles.languages}>
                 <BoxLanguages title="JavaScript" />
                 <BoxLanguages title="TypeScript" />
