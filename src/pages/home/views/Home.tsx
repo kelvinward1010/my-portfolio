@@ -1,5 +1,6 @@
 import TitlePage from "@/components/titlepage/TitlePage";
 import styles from "./Home.module.scss";
+import SolarSystem from "../components/SolarSystem";
 
 export function Home() {
     return (
@@ -11,6 +12,9 @@ export function Home() {
                 Technology. I aim to become a FullStack programmer in the
                 future.
             </p>
+            <div>
+                <SolarSystem />
+            </div>
         </div>
     );
 }
