@@ -1,6 +1,7 @@
 import TitlePage from "@/components/titlepage/TitlePage";
 import styles from "./About.module.scss";
 import { ImgAVT } from "@/assets/imgs";
+import Quote from "@/components/quote/Quote";
 
 export function About() {
     return (
@@ -18,6 +19,10 @@ export function About() {
                 Technology. I aim to become a FullStack programmer in the
                 future.
             </p>
+            <Quote
+                author="Ho Chi Minh"
+                label="Không có việc gì khó/ Chỉ sợ lòng không bền/ Đào núi và lấp biển/ Quyết chí ắt làm nên"
+            />
             <br />
             <p className="text-normal">
                 I was born and raised in my beloved hometown of Hai Duong until
