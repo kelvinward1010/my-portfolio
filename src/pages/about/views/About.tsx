@@ -2,6 +2,7 @@ import TitlePage from "@/components/titlepage/TitlePage";
 import styles from "./About.module.scss";
 import { ImgAVT } from "@/assets/imgs";
 import Quote from "@/components/quote/Quote";
+import { splitSentences } from "@/utils/string";
 
 export function About() {
     return (
@@ -21,7 +22,9 @@ export function About() {
             </p>
             <Quote
                 author="Ho Chi Minh"
-                label="Không có việc gì khó/ Chỉ sợ lòng không bền/ Đào núi và lấp biển/ Quyết chí ắt làm nên"
+                label={splitSentences(
+                    "Không có việc gì khó/ Chỉ sợ lòng không bền/ Đào núi và lấp biển/ Quyết chí ắt làm nên",
+                )}
             />
             <br />
             <p className="text-normal">
