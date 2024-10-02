@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    margin-bottom: 20px;
+
+    .time {
+        width: 140px;
+        min-width: 100px;
+        text-align: right;
+        padding-right: 10px;
+        color: rgb(71, 71, 71);
+    }
+
+    .content {
+        flex: 1;
+        padding-left: 10px;
+        border-left: 2px solid #ccc;
+
+        h3 {
+            color: rgb(71, 71, 71);
+        }
+    }
+}

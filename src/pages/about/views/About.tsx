@@ -3,8 +3,22 @@ import styles from "./About.module.scss";
 import { ImgAVT } from "@/assets/imgs";
 import Quote from "@/components/quote/Quote";
 import { splitSentences } from "@/utils/string";
+import Timeline from "@/components/timeline/Timeline";
 
 export function About() {
+    const timelineItems = [
+        {
+            title: "AI Academy company",
+            description: "Internship React",
+            time: "07/2022-07/2023",
+        },
+        {
+            title: "Powergate Australia Company",
+            description: "Internship React",
+            time: "02/2024-06/2024",
+        },
+    ];
+
     return (
         <div className={styles.container}>
             <TitlePage title="About" description="Introduce myself" />
@@ -37,6 +51,9 @@ export function About() {
                 don't like to drink a lot of alcohol because it is harmful to
                 the body; especially don't use stimulants.
             </p>
+            <div className={styles.exps}>
+                <Timeline lable="My experience" items={timelineItems} />
+            </div>
         </div>
     );
 }
