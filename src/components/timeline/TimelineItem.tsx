@@ -3,13 +3,15 @@ import styles from "./TimelineItem.module.scss";
 
 interface TimelineItemProps {
     title: string;
-    description: string;
+    description?: string;
+    descriptionComponent?: React.ReactNode;
     time: string;
 }
 
 const TimelineItem: React.FC<TimelineItemProps> = ({
     title,
     description,
+    descriptionComponent,
     time,
 }) => {
     return (
@@ -19,7 +21,8 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
             </div>
             <div className={styles.content}>
                 <h3 className="text-normal">{title}</h3>
-                <p className="text-normal">{description}</p>
+                {description && <p className="text-normal">{description}</p>}
+                {descriptionComponent}
             </div>
         </div>
     );

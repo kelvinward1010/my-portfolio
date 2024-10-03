@@ -7,6 +7,11 @@
     height: 5px;
 }
 
+body {
+    overflow-x: hidden; /* Ẩn cuộn ngang */
+    overflow-y: auto; /* Cho phép cuộn dọc */
+}
+
 /* Track */
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 4px grey;

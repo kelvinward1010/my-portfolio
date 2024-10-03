@@ -4,10 +4,14 @@
 
     .time {
         width: 140px;
-        min-width: 100px;
+        min-width: 50px;
         text-align: right;
         padding-right: 10px;
-        color: rgb(71, 71, 71);
+        color: rgb(110, 110, 110);
+
+        strong {
+            width: auto;
+        }
     }
 
     .content {
@@ -16,7 +20,7 @@
         border-left: 2px solid #ccc;
 
         h3 {
-            color: rgb(71, 71, 71);
+            color: rgb(110, 110, 110);
         }
     }
 }

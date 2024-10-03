@@ -5,7 +5,8 @@ import styles from "./Timeline.module.scss";
 interface TimelineProps {
     items: {
         title: string;
-        description: string;
+        description?: string;
+        descriptionComponent?: React.ReactNode;
         time: string;
     }[];
     lable?: string;
@@ -20,6 +21,7 @@ const Timeline: React.FC<TimelineProps> = ({ items, lable }) => {
                     key={index}
                     title={item.title}
                     description={item.description}
+                    descriptionComponent={item.descriptionComponent}
                     time={item.time}
                 />
             ))}

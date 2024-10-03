@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Navbar } from "./components/navbar/Navbar";
 import useThemeMode from "@/hooks/useThemeMode";
 import Footer from "./components/footer/Footer";
+import { ScrollToTop } from "@/hooks/useScrollToTop";
 
 interface Props {
     children?: React.ReactNode;
@@ -35,6 +36,7 @@ export function Layout({ children }: Props) {
                         <Outlet />
                         {children}
                         <Footer />
+                        <ScrollToTop />
                     </motion.div>
                 </AnimatePresence>
             </div>

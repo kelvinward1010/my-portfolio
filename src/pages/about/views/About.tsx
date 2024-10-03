@@ -6,15 +6,49 @@ import { splitSentences } from "@/utils/string";
 import Timeline from "@/components/timeline/Timeline";
 
 export function About() {
+    const componentdescriptionforAiAcademy = (
+        <div>
+            <p className="text-normal">
+                - Completed the Dasuka product project for Dasuka customers
+            </p>
+            <p className="text-normal">
+                - Research and development of the V-osin product project of the
+                Ministry of Defense.
+            </p>
+            <p className="text-normal">
+                - Research new technology and make demos for AI.
+            </p>
+            <p className="text-normal">
+                - Use React and research-related React UI libraries, and do
+                tasks in participating projects.
+            </p>
+            <p className="text-normal">
+                - I'm collaborating with Designer, BA, and Tester to build UI/UX
+                and fix bugs.
+            </p>
+        </div>
+    );
+
+    const componentdescriptionforPowerGateAustralia = (
+        <div>
+            <p className="text-normal">
+                - Practice teaching according to React's standard form.
+            </p>
+            <p className="text-normal">
+                - Participate in developing tasks in the project.
+            </p>
+        </div>
+    );
+
     const timelineItems = [
         {
-            title: "AI Academy company",
-            description: "Internship React",
+            title: "Intern front-end - AI Academy company",
+            descriptionComponent: componentdescriptionforAiAcademy,
             time: "07/2022-07/2023",
         },
         {
-            title: "Powergate Australia Company",
-            description: "Internship React",
+            title: "Intern React - Powergate Australia Company",
+            descriptionComponent: componentdescriptionforPowerGateAustralia,
             time: "02/2024-06/2024",
         },
     ];
@@ -32,7 +66,14 @@ export function About() {
                 Hello, my name is Tyler Locke. I am a student at Vietnam
                 National University of Agriculture, Faculty of Information
                 Technology. I aim to become a FullStack programmer in the
-                future.
+                future. I was born and raised in my beloved hometown of Hai
+                Duong until I was 17 years old when I moved to Hanoi to study at
+                university. I am currently living in Hanoi to work and study. My
+                hobbies are watching movies, playing games, coding, traveling,
+                and cooking. I like to spend time learning English, and coding
+                is the main thing. I like to talk and share different stories
+                with others. I don't like to drink a lot of alcohol because it
+                is harmful to the body; especially don't use stimulants.
             </p>
             <Quote
                 author="Ho Chi Minh"
@@ -41,18 +82,8 @@ export function About() {
                 )}
             />
             <br />
-            <p className="text-normal">
-                I was born and raised in my beloved hometown of Hai Duong until
-                I was 17 years old when I moved to Hanoi to study at university.
-                I am currently living in Hanoi to work and study. My hobbies are
-                watching movies, playing games, coding, traveling, and cooking.
-                I like to spend time learning English, and coding is the main
-                thing. I like to talk and share different stories with others. I
-                don't like to drink a lot of alcohol because it is harmful to
-                the body; especially don't use stimulants.
-            </p>
             <div className={styles.exps}>
-                <Timeline lable="My experience" items={timelineItems} />
+                <Timeline items={timelineItems} />
             </div>
         </div>
     );

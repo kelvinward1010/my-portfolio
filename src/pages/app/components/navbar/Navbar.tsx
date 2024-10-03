@@ -9,6 +9,7 @@ import {
     travelUrl,
 } from "@/routes/urls";
 import {
+    IconArrowUp,
     IconBrandDeviantart,
     IconBrandFacebook,
     IconBrandGithub,
@@ -98,6 +99,10 @@ interface NavbarProps {
 }
 
 export function Navbar({ isDarkMode, toggleTheme }: NavbarProps) {
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
     return (
         <div className={styles.container}>
             {MENUS.map((menu) => {
@@ -113,6 +118,9 @@ export function Navbar({ isDarkMode, toggleTheme }: NavbarProps) {
             })}
             <button className={styles.formbuttonmenu} onClick={toggleTheme}>
                 {isDarkMode ? <IconMoonFilled /> : <IconSun />}
+            </button>
+            <button className={styles.formbuttonmenu} onClick={scrollToTop}>
+                <IconArrowUp />
             </button>
         </div>
     );
