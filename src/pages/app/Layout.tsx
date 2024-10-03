@@ -36,10 +36,10 @@ export function Layout({ children }: Props) {
                         <Outlet />
                         {children}
                         <Footer />
-                        <ScrollToTop />
                     </motion.div>
                 </AnimatePresence>
             </div>
+            <ScrollToTop />
         </div>
     );
 }
