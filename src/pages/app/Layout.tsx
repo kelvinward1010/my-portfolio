@@ -22,14 +22,14 @@ export function Layout({ children }: Props) {
                 <Navbar toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
                 <AnimatePresence mode={"wait"}>
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         // initial={{ scale: 0.9, rotate: 180, opacity: 0 }}
                         // animate={{ scale: 1, rotate: 0, opacity: 1 }}
                         transition={{
                             duration: 1,
                             ease: "easeInOut",
-                            delay: 0.2,
+                            delay: 0.4,
                         }}
                         key={location.pathname}
                     >
