@@ -42,6 +42,10 @@ export function Project() {
                 <ProjectCpt />
                 <ProjectCpt />
                 <ProjectCpt />
+                <ProjectCpt />
+                <ProjectCpt />
+                <ProjectCpt />
+                <ProjectCpt />
             </div>
         </div>
     );

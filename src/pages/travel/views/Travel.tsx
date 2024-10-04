@@ -11,6 +11,10 @@ export function Travel() {
                 <TravelCpt />
                 <TravelCpt />
                 <TravelCpt />
+                <TravelCpt />
+                <TravelCpt />
+                <TravelCpt />
+                <TravelCpt />
             </div>
         </div>
     );
