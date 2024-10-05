@@ -23,7 +23,7 @@ export function Project() {
                 description="Projects that I research and complete independently"
             />
             <div className={styles.forminput}>
-                <h2 className="text-normal">Search repositoties Github</h2>
+                <h2 className="text-normal">Search repositoties on Github</h2>
                 <p className="text-normal">
                     All public projects you can refer to
                 </p>
