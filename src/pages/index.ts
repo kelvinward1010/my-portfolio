@@ -39,3 +39,8 @@ export const TravelID = lazyLoad(
     () => import("./travel/views/TravelID"),
     (module) => module.TravelID,
 );
+
+export const Social = lazyLoad(
+    () => import("./social/views/Social"),
+    (module) => module.Social,
+);

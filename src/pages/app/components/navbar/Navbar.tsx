@@ -6,6 +6,7 @@ import {
     imagesUrl,
     layoutUrl,
     projectUrl,
+    socialUrl,
     travelUrl,
 } from "@/routes/urls";
 import {
@@ -20,6 +21,7 @@ import {
     IconMoonFilled,
     IconPhoto,
     IconPlaneTilt,
+    IconSocial,
     IconSun,
     IconUserCircle,
 } from "@tabler/icons-react";
@@ -62,30 +64,37 @@ const MENUS = [
     },
     {
         key: 6,
+        icon: <IconSocial />,
+        url: socialUrl,
+        label: "Social Media",
+        text: "Social Media",
+    },
+    {
+        key: 7,
         icon: <IconBrandFacebook />,
         url: "https://www.facebook.com/duy.kelvinward",
         text: "Facebook",
     },
     {
-        key: 7,
+        key: 8,
         icon: <IconBrandInstagram />,
         url: "https://www.instagram.com/kelvinward101/",
         text: "Instagram",
     },
     {
-        key: 8,
+        key: 9,
         icon: <IconBrandGithub />,
         url: "https://github.com/kelvinward1010",
         text: "Github",
     },
     {
-        key: 9,
+        key: 10,
         icon: <IconBrandLinkedin />,
         url: "https://www.linkedin.com/in/dao-van-duy-29a10928b/",
         text: "LinkedIn",
     },
     {
-        key: 10,
+        key: 11,
         icon: <IconContract />,
         url: contactUrl,
         label: "Contact",

@@ -6,6 +6,7 @@ import {
     imagesUrl,
     layoutUrl,
     projectUrl,
+    socialUrl,
     travelIDUrl,
     travelUrl,
 } from "./urls";
@@ -17,6 +18,7 @@ import {
     ImagesPage,
     ImagesPageID,
     Project,
+    Social,
     Travel,
     TravelID,
 } from "../pages";
@@ -57,6 +59,10 @@ export const routerConfig = createBrowserRouter([
             {
                 path: travelIDUrl,
                 element: <TravelID />,
+            },
+            {
+                path: socialUrl,
+                element: <Social />,
             },
         ],
     },
