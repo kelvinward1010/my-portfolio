@@ -4,6 +4,10 @@ import SocialChildren from "../components/SocialChildren";
 import { ImgAVT } from "@/assets/imgs";
 
 export function Social() {
+    const handleButtonClick = (url: string) => {
+        window.open(url, "_blank");
+    };
+
     function FormFaceBook() {
         return (
             <div className={styles.socialContainer}>
@@ -11,7 +15,15 @@ export function Social() {
                     <img src={ImgAVT} alt="img-logo" />
                 </div>
                 <div className={styles.moreSocial}>
-                    <button>See more</button>
+                    <button
+                        onClick={() =>
+                            handleButtonClick(
+                                "https://www.facebook.com/duy.kelvinward",
+                            )
+                        }
+                    >
+                        See more
+                    </button>
                 </div>
             </div>
         );
@@ -24,7 +36,15 @@ export function Social() {
                     <img src={ImgAVT} alt="img-logo" />
                 </div>
                 <div className={styles.moreSocial}>
-                    <button>See more</button>
+                    <button
+                        onClick={() =>
+                            handleButtonClick(
+                                "https://www.instagram.com/kelvinward101/",
+                            )
+                        }
+                    >
+                        See more
+                    </button>
                 </div>
             </div>
         );
@@ -37,7 +57,15 @@ export function Social() {
                     <img src={ImgAVT} alt="img-logo" />
                 </div>
                 <div className={styles.moreSocial}>
-                    <button>See more</button>
+                    <button
+                        onClick={() =>
+                            handleButtonClick(
+                                "https://www.linkedin.com/in/dao-van-duy-29a10928b/",
+                            )
+                        }
+                    >
+                        See more
+                    </button>
                 </div>
             </div>
         );
