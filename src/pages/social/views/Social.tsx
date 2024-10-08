@@ -71,12 +71,34 @@ export function Social() {
         );
     }
 
+    function FormTikTok() {
+        return (
+            <div className={styles.socialContainer}>
+                <div className={styles.imgSocial}>
+                    <img src={ImgAVT} alt="img-logo" />
+                </div>
+                <div className={styles.moreSocial}>
+                    <button
+                        onClick={() =>
+                            handleButtonClick(
+                                "https://www.tiktok.com/@kelvin.ward",
+                            )
+                        }
+                    >
+                        See more
+                    </button>
+                </div>
+            </div>
+        );
+    }
+
     return (
         <div className={styles.container}>
-            <TitlePage title="Social Media" description="Social Media" />
+            <TitlePage title="Social Media" description="My social media" />
             <div>
                 <SocialChildren lable="Facebook" content={<FormFaceBook />} />
                 <SocialChildren lable="Instagram" content={<FormInstagram />} />
+                <SocialChildren lable="TikTok" content={<FormTikTok />} />
                 <SocialChildren lable="LinkedIn" content={<FormLinkedIn />} />
             </div>
         </div>

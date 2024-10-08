@@ -18,13 +18,10 @@
     }
 
     .contentmain {
-        max-height: 0;
         overflow: hidden;
-        transition: max-height 0.5s ease-out;
+        transition:
+            max-height 0.5s ease,
+            padding 0.5s ease;
         padding: 5px 20px;
-    }
-
-    .open {
-        max-height: 500px;
     }
 }

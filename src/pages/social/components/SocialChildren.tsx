@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./SocialChildren.module.scss";
+import { motion } from "framer-motion";
 import { IconCaretDownFilled, IconCaretUpFilled } from "@tabler/icons-react";
 
 interface SocialChildrenProps {
@@ -21,11 +22,14 @@ function SocialChildren({ lable, content }: SocialChildrenProps) {
                 </div>
             )}
             {isOpen ? (
-                <div
-                    className={`${styles.contentmain} ${isOpen ? styles.open : ""}`}
+                <motion.div
+                    initial={false}
+                    animate={{ height: isOpen ? "auto" : 0 }}
+                    transition={{ height: { duration: 1 } }}
+                    className={styles.contentmain}
                 >
                     {content}
-                </div>
+                </motion.div>
             ) : null}
         </div>
     );
