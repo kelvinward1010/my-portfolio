@@ -1,0 +1,32 @@
+.socialContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    .imgSocial {
+        flex: 1;
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+
+    .moreSocial {
+        flex: 1.5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        button {
+            border: none;
+            background-color: teal;
+            color: white;
+            padding: 5px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    }
+}
