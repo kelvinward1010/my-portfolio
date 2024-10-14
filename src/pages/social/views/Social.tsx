@@ -1,7 +1,13 @@
 import TitlePage from "@/components/titlepage/TitlePage";
 import styles from "./Social.module.scss";
 import SocialChildren from "../components/SocialChildren";
-import { ImgAVT } from "@/assets/imgs";
+import {
+    imgLinkedIn,
+    imgMyFacebook,
+    imgMyInstagram,
+    imgMyTiktok,
+} from "@/assets/imgs/socials";
+import CopyLinkButton from "@/components/copylinkbutton/CopyLinkButton";
 
 export function Social() {
     const handleButtonClick = (url: string) => {
@@ -12,7 +18,7 @@ export function Social() {
         return (
             <div className={styles.socialContainer}>
                 <div className={styles.imgSocial}>
-                    <img src={ImgAVT} alt="img-logo" />
+                    <img src={imgMyFacebook} alt="img-logo" />
                 </div>
                 <div className={styles.moreSocial}>
                     <button
@@ -22,8 +28,9 @@ export function Social() {
                             )
                         }
                     >
-                        See more
+                        Open in a new tab
                     </button>
+                    <CopyLinkButton link="https://www.facebook.com/duy.kelvinward" />
                 </div>
             </div>
         );
@@ -33,7 +40,7 @@ export function Social() {
         return (
             <div className={styles.socialContainer}>
                 <div className={styles.imgSocial}>
-                    <img src={ImgAVT} alt="img-logo" />
+                    <img src={imgMyInstagram} alt="img-logo" />
                 </div>
                 <div className={styles.moreSocial}>
                     <button
@@ -43,8 +50,9 @@ export function Social() {
                             )
                         }
                     >
-                        See more
+                        Open in a new tab
                     </button>
+                    <CopyLinkButton link="https://www.instagram.com/kelvinward101/" />
                 </div>
             </div>
         );
@@ -54,7 +62,7 @@ export function Social() {
         return (
             <div className={styles.socialContainer}>
                 <div className={styles.imgSocial}>
-                    <img src={ImgAVT} alt="img-logo" />
+                    <img src={imgLinkedIn} alt="img-logo" />
                 </div>
                 <div className={styles.moreSocial}>
                     <button
@@ -64,8 +72,9 @@ export function Social() {
                             )
                         }
                     >
-                        See more
+                        Open in a new tab
                     </button>
+                    <CopyLinkButton link="https://www.linkedin.com/in/dao-van-duy-29a10928b/" />
                 </div>
             </div>
         );
@@ -75,7 +84,7 @@ export function Social() {
         return (
             <div className={styles.socialContainer}>
                 <div className={styles.imgSocial}>
-                    <img src={ImgAVT} alt="img-logo" />
+                    <img src={imgMyTiktok} alt="img-logo" />
                 </div>
                 <div className={styles.moreSocial}>
                     <button
@@ -85,8 +94,9 @@ export function Social() {
                             )
                         }
                     >
-                        See more
+                        Open in a new tab
                     </button>
+                    <CopyLinkButton link="https://www.tiktok.com/@kelvin.ward" />
                 </div>
             </div>
         );

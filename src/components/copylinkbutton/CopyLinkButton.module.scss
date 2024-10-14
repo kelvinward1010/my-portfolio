@@ -1,0 +1,16 @@
+.buttoncopylink {
+    display: flex;
+    align-items: center;
+    gap: 5;
+    margin-top: 10px;
+    border: none;
+    background-color: teal;
+    color: white;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+
+    p {
+        margin-left: 5px;
+    }
+}
