@@ -5,6 +5,7 @@ import {
     imagesIDUrl,
     imagesUrl,
     layoutUrl,
+    projectIDUrl,
     projectUrl,
     socialUrl,
     travelIDUrl,
@@ -18,6 +19,7 @@ import {
     ImagesPage,
     ImagesPageID,
     Project,
+    ProjectPageID,
     Social,
     Travel,
     TravelID,
@@ -39,6 +41,10 @@ export const routerConfig = createBrowserRouter([
             {
                 path: projectUrl,
                 element: <Project />,
+            },
+            {
+                path: projectIDUrl,
+                element: <ProjectPageID />,
             },
             {
                 path: aboutUrl,

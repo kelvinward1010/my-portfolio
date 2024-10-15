@@ -20,6 +20,11 @@ export const Project = lazyLoad(
     (module) => module.Project,
 );
 
+export const ProjectPageID = lazyLoad(
+    () => import("./project/views/ProjectPageID"),
+    (module) => module.ProjectPageID,
+);
+
 export const ImagesPage = lazyLoad(
     () => import("./images/views/ImagesPage"),
     (module) => module.ImagesPage,

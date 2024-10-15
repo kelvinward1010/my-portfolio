@@ -2,9 +2,15 @@ import useThemeMode from "@/hooks/useThemeMode";
 import styles from "./ProjectCpt.module.scss";
 import BoxLanguages from "../BoxLanguages";
 import { IconArrowUpRight } from "@tabler/icons-react";
+import { useNavigate } from "react-router-dom";
+import { projectUrl } from "@/routes/urls";
 
 function ProjectCpt() {
     const { isDarkMode } = useThemeMode();
+    const navigate = useNavigate();
+
+    const goDetail = () => navigate(`${projectUrl}/abc`);
+
     const handleButtonClick = (url: string) => {
         window.open(url, "_blank");
     };
@@ -33,7 +39,7 @@ function ProjectCpt() {
                         On github <IconArrowUpRight size={15} />
                     </div>
                 </button>
-                <button>See more</button>
+                <button onClick={goDetail}>See more</button>
             </div>
         </div>
     );

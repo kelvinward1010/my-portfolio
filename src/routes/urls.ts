@@ -3,6 +3,7 @@ export const layoutUrl = "/";
 export const homeUrl = "/";
 export const aboutUrl = "/about";
 export const projectUrl = "/project";
+export const projectIDUrl = "/project/:id";
 export const contactUrl = "/contact";
 export const socialUrl = "/social-media";
 export const imagesUrl = "/images";
